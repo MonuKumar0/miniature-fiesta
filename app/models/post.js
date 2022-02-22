@@ -5,8 +5,14 @@ const PostSchema = new Schema({
   text: {
     type: String,
     required: true,
+    validate: {
+      validator(val) {
+        return val.length <= 255
+      },
+      message: 'post length should be less than 256',
+    },
   },
-   user: { type: Schema.Types.ObjectId, ref: 'User' },
+  user: { type: Schema.Types.ObjectId, ref: 'User' },
 }, {
   timestamps: true,
 });
