@@ -1,7 +1,6 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import Post from './post.js';
 import Constants from '../config/constants.js';
 
 const Schema = mongoose.Schema;
