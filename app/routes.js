@@ -13,7 +13,7 @@ const routes = new Router();
 routes.post('/auth/login', AuthController.login);
 routes.get('/posts', authenticate, PostsController.search);
 routes.post('/posts', accessControl('admin'), PostsController.create);
-routes.delete('/posts/:id', authenticate, PostsController.populate, PostsController.delete);
+routes.delete('/posts/:id', accessControl('admin'), PostsController.populate, PostsController.delete);
 routes.put('/posts/:id', accessControl('admin'), PostsController.update);
 
 
