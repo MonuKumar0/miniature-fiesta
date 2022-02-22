@@ -1,0 +1,19 @@
+{
+  "name": "attain-u-assignment",
+  "version": "0.0.1",
+  "description": "AttainU assignment",
+  "type": "module",
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "author": "Monu Kumar",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.3",
+    "morgan": "^1.10.0"
+  }
+}
